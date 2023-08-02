@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>#3 - Password Generator | juyoungh98</title>
+
+		<script defer src="main.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Password Generator</h2>
+			<div class="wrapper">
+				<div class="input-box">
+					<input type="text" name="" id="" disabled>
+					<span class="material-symbols-rounded">
+				</div>
+				<div class="pass-indicator"></div>
+				<div class="pass-length">
+					<div class="details">
+						<label class="title">Password Length</label>
+						<span></span>
+					</div>
+					<input type="range" min="1" max="30" value="15" step="1">
+				</div>
+
+				<div class="pass-settings">
+					<label class="title">Pass Settings</label>
+					<ul class="options">
+						<li class="option">
+							<input type="text" id="lowercase" checked>
+							<label for="lowercase">Lowercase (a-z)</label>
+						</li>
+						<li class="option">
+							<input type="text" id="uppercase">
+							<label for="lowercase">Lowercase (a-z)</label>
+						</li>
+						<li class="option">
+							<input type="text" id="numbers">
+							<label for="lowercase">Lowercase (a-z)</label>
+						</li>
+						<li class="option">
+							<input type="text" id="symbols">
+							<label for="lowercase">Lowercase (a-z)</label>
+						</li>
+						<li class="option">
+							<input type="text" id="exc-duplicate">
+							<label for="lowercase">Lowercase (a-z)</label>
+						</li>
+						<li class="option">
+							<input type="text" id="spaces">
+							<label for="lowercase">Include Spaces</label>
+						</li>
+					</ul>
+				</div>
+				
+				<button class="generate-btn">Generate Password</button>
+
+			</div>
+		</div>
+	</body>
+</html>
